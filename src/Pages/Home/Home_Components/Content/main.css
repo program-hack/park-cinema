@@ -1,0 +1,113 @@
+#link {
+    position: relative;
+    text-decoration: none;
+}
+
+#text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    transition: all 0.2s ease;
+}
+
+#text:hover {
+    color: rgba(213, 43, 30, 1);
+}
+
+#text::after {
+    content: '';
+    position: absolute;
+    top: "auto";
+    bottom: -3px;
+    left: 2px;
+    right: 0;
+    width: 0%;
+    height: 5px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+#text:hover::after {
+    width: 101%;
+    background-color: rgba(213, 43, 30, 1);
+}
+
+#menu {
+    color: #d9dadb;
+    font-weight: 400;
+    font-size: 19px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#menu::after {
+    content: '';
+    position: absolute;
+    top: "auto";
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+#menu:focus {
+    color: #fff;
+}
+
+#menu:focus::after {
+    width: 105%;
+    background-color: #fff;
+}
+
+#select {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+    width: 400px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#select:hover {
+    border-bottom: 2.4px solid #fff;
+}
+
+#select::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    top: auto;
+    left: 0;
+    right: 0;
+    height: 2.4px;
+    width: 0%;
+    background-color: transparent;
+    z-index: 99;
+    transition: all 0.4s ease;
+}
+
+#select:focus::after {
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: rgba(213, 43, 30, 1);
+}
+
+#input {
+    border-bottom: 1px solid #fff;
+    position: relative;
+    max-width: 400px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#input:focus {
+    border-bottom: 1px solid rgba(213, 43, 30, 1);
+}
