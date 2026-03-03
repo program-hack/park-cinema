@@ -15,3 +15,7 @@ body {
   padding: 0;
   font-family: "Fira Sans", sans-serif;
 }
+
+.MuiTypography-root {
+  font-family: inherit !important;
+}

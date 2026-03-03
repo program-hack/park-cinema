@@ -9,6 +9,8 @@ import Cinemas_Product_Page from './Pages/Cinemas_page/Cinemas_Product_Page/Cine
 import Campaigns_Page from './Pages/Campaigns_page/Campaigns_Page';
 import Campaigns_Product_Page from './Pages/Campaigns_page/Campaigns_Product_Page/Campaigns_Product_Page';
 import FAQ_Page from './Pages/FAQ_Page/FAQ_Page';
+import Contacts_Page from './Pages/Contacts_Page/Contacts_Page';
+import Profile_Page from './Pages/Profile_page/Profile_Page';
 
 function App() {
   const [select3, setSelect3] = useState(false);
@@ -32,6 +34,8 @@ function App() {
           <Route path="/campaigns" element={<Campaigns_Page />} />
           <Route path="/campaigns/:campaignId" element={<Campaigns_Product_Page />} />
           <Route path="/faq" element={<FAQ_Page />} />
+          <Route path="/contacts" element={<Contacts_Page />} />
+          <Route path="/profile" element={<Profile_Page />} />
         </Routes>
         <Footer />
       </Router>
