@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material';
-import { carouselPictures } from './data';
+import { carouselComponents } from './data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Navigation } from 'swiper/modules'
 import { useNavigate } from 'react-router-dom';
@@ -30,10 +30,10 @@ const Carousel = () => {
                 crossFade: true
             }}
         >
-            {carouselPictures.map((picture, index) => (
+            {carouselComponents.map((picture, index) => (
                 <SwiperSlide key={index}>
-                    <img style={{ width: "100%", height: "auto" }} src={picture} alt="Picture" />
-                    <Box onClick={() => navigate("/products")} sx={{ height: "100%", width: "100%", cursor: "pointer", background: "linear-gradient(to bottom, black 0%, transparent 40%, transparent 60%, black 100%)", position: "absolute", top: 0, bottom: 0, right: 0, left: 0, zIndex: 99 }}></Box>
+                    <img style={{ width: "100%", height: "auto" }} src={picture.picture} alt="Picture" />
+                    <Box onClick={() => navigate(`/movie/${picture.link}`)} sx={{ height: "100%", width: "100%", cursor: "pointer", background: "linear-gradient(to bottom, black 0%, transparent 40%, transparent 60%, black 100%)", position: "absolute", top: 0, bottom: 0, right: 0, left: 0, zIndex: 99 }}></Box>
                 </SwiperSlide>
             ))}
             <Box
