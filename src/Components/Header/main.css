@@ -1,0 +1,39 @@
+#logo {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+    #header-inner {
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: auto) {
+
+}
+
+@media (max-width: 900px) {
+    #header-inner {
+        max-width: 850px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #right-side {
+        display: none;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 460px) {
+    #logo {
+        width: 115px;
+    }
+}

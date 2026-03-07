@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { Box, Fade, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { Link } from 'react-router-dom';
 import SelectBox from './SelectBox';
 import { productsList } from './data';
 import Products from './Products';
-import "./main.css";
 import Schedule from './Schedule/Schedule';
+import "./main.css";
 
 const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas }) => {
     const [select1, setSelect1] = useState(false);
@@ -22,7 +22,7 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
     return (
         <Box sx={{ backgroundColor: "rgba(55, 55, 55, 1)", py: 7 }}>
             <Box sx={{ maxWidth: "1400px", mx: "auto" }}>
-                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: "880px", mx: "auto" }}>
+                <Box id={"content-menu"} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: "880px", mx: "auto" }}>
                     <Link
                         id={"link"}
                         to={"/"}
@@ -41,12 +41,12 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
                     </Link>
                 </Box>
 
-                <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 5, mt: 6 }}>
+                <Box id={"content-buttons-list"} sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: 5, mt: 6 }}>
                     <Box sx={{ position: "relative" }}>
                         <Link onClick={() => {
                             setFilter('all');
                             setScheduleClick(false)
-                        }} id={"menu"}>Все</Link>
+                        }} id={"content-buttons-menu"}>Все</Link>
                     </Box>
                     <Box sx={{ position: "relative" }}>
                         <Link onClick={
@@ -54,10 +54,10 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
                                 setScheduleClick(false);
                                 setFilter('soon');
                             }
-                        } id={"menu"}>Скоро</Link>
+                        } id={"content-buttons-menu"}>Скоро</Link>
                     </Box>
                     <Box sx={{ position: "relative" }}>
-                        <Link onClick={() => setScheduleClick(true)} id={"menu"}>Рассписание</Link>
+                        <Link onClick={() => setScheduleClick(true)} id={"content-buttons-menu"}>Рассписание</Link>
                     </Box>
                 </Box>
 
@@ -67,7 +67,7 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
                     <>
                         <SelectBox setSelect1={setSelect1} setSelect2={setSelect2} select1={select1} select2={select2} cinemas={cinemas} languages={languages} />
                         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(4, auto)", gap: 4, mt: 3 }}>
+                            <Box id={"products-box"} sx={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 4, mt: 3 }}>
                                 {filterProducts.map((product, index) => (
                                     <Products key={index} product={product} />
                                 ))}

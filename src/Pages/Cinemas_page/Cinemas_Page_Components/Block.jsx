@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Block = ({ cinema }) => {
   const navigate = useNavigate();
   return (
-    <Box onClick={() => navigate(`/cinemas/${cinema.path}`)} sx={{ maxWidth: "420px", maxHeight: "535px", height: "100%", p: 2, borderRadius: 5, backgroundColor: "#4d4d4d", cursor: "pointer", "&:hover": { backgroundColor: "rgba(72, 71, 71, 1)", transition: "all 0.2s ease" }, transition: "all 0.2s ease" }}>
+    <Box onClick={() => navigate(`/cinemas/${cinema.path}`)} id={"cinemas-page-box"} sx={{ maxWidth: "420px", maxHeight: "535px", height: "100%", p: 2, borderRadius: 5, backgroundColor: "#4d4d4d", cursor: "pointer", "&:hover": { backgroundColor: "rgba(72, 71, 71, 1)", transition: "all 0.2s ease" }, transition: "all 0.2s ease" }}>
       <Box sx={{ maxHeight: "300px", maxHeight: "300px", width: "100%", height: "100%", overflow: "hidden", objectFit: "cover", display: "flex", justifyContent: "center", alignItems: "center" }}>
         <img style={{ width: "100%", height: "auto" }} src={cinema.image} alt="Picture" />
       </Box>

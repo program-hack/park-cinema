@@ -1,0 +1,110 @@
+#cinemas-page-product-page-image-box-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    #cinemas-page-product-page-image-box {
+        max-height: 530px;
+    }
+
+    #cinemas-page-product-page-hover {
+        max-height: 530px;
+    }
+}
+
+@media (max-width: 920px) {
+    #cinemas-page-box {
+        max-width: 640px;
+        margin: 0 25px;
+    }
+}
+
+@media (max-width: 850px) {
+    #cinemas-page-product-page-image-box-image {
+        width: 110%;
+    }
+
+    #cinemas-page-product-page-spans {
+        column-gap: 25px;
+        margin-top: 8px;
+    }
+
+    #cinemas-page-product-page-description {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 760px) {
+    #cinemas-page-product-page-title {
+        margin-top: 6rem;
+    }
+
+    #cinemas-page-product-page-image-box-image {
+        width: 140%;
+    }
+
+    #cinemas-page-product-page-hover {
+        max-height: 585px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #cinemas-page-product-page-image-text-box {
+        min-height: 630px;
+    }
+    
+    #cinemas-page-product-page-title {
+        font-size: 33px;
+        margin-top: 6.5rem;
+    }
+
+    #cinemas-page-product-page-image-box {
+        max-height: 700px;
+    }
+
+    #cinemas-page-product-page-image-box-image {
+        width: 155%;
+    }
+}
+
+@media (max-width: 595px) {
+    #cinemas-page-product-page-image-box-image {
+        width: 167%;
+    }
+
+    #cinemas-page-product-page-hover {
+        max-height: 620px;
+    }
+}
+
+@media (max-width: 500px) {
+    #cinemas-page-product-page-hover {
+        max-height: 593px;
+    }
+
+    #cinemas-page-product-page-image-box-image {
+        width: 194%;
+    }
+}
+
+@media (max-width: 350px) {
+    #cinemas-page-product-page-hover {
+        min-height: 700px;
+        padding: 0 20px;
+    }
+
+    #cinemas-page-product-page-image-box-image {
+        width: 400%;
+    }
+
+    #cinemas-page-product-page-title {
+        margin-top: 5.3rem;
+    }
+
+    #cinemas-page-product-page-bottom-content {
+        margin-top: 10rem;
+    }
+}

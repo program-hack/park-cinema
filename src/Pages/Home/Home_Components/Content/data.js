@@ -230,7 +230,7 @@ export const productsList = [
         date: "12.02.2026",
         age: "18+",
         pre_sale: false,
-        top: 40,
+        top: 44,
         is_released: true,
         path: "na-pomosh",
         theme: "Ужас, Триллеры",

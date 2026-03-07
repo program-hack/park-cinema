@@ -11,24 +11,18 @@ import Campaigns_Product_Page from './Pages/Campaigns_page/Campaigns_Product_Pag
 import FAQ_Page from './Pages/FAQ_Page/FAQ_Page';
 import Contacts_Page from './Pages/Contacts_Page/Contacts_Page';
 import Profile_Page from './Pages/Profile_page/Profile_Page';
+import { Box } from '@mui/material';
 
 function App() {
   const [select3, setSelect3] = useState(false);
   const [select4, setSelect4] = useState(false);
-
-  const languages = [
-    "AZ", "TR", "RU", "EN"
-  ]
-  const cinemas = [
-    "Park Bulvar", "Metro Park", "Flame Towers", "Sevinc Mall", "Shahdag"
-  ]
   return (
-    <>
+    <Box sx={{ backgroundColor: "#373737", overflow: "hidden" }}>
       <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/movie/:movieId" element={<Products_Page setSelect3={setSelect3} setSelect4={setSelect4} select3={select3} select4={select4} languages={languages} cinemas={cinemas} />} />
+          <Route path="/movie/:movieId" element={<Products_Page setSelect3={setSelect3} setSelect4={setSelect4} select3={select3} select4={select4} />} />
           <Route path="/cinemas" element={<Cinemas_Page />} />
           <Route path="/cinemas/:cinemaId" element={<Cinemas_Product_Page />} />
           <Route path="/campaigns" element={<Campaigns_Page />} />
@@ -39,7 +33,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </>
+    </Box>
   );
 }
 

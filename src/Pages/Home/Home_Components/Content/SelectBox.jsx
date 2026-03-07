@@ -19,7 +19,7 @@ const SelectBox = ({ setSelect1, setSelect2, select1, select2, cinemas, language
     const [state2, setState2] = useState('');
     return (
         <>
-            <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, position: "relative", py: 5 }}>
+            <Box id={"select-box"} sx={{ display: "grid", gridTemplateColumns: "repeat(3, auto)", gap: 10, position: "relative", py: 5 }}>
                 <Box onClick={() => setSelect1(!select1)} id={"select"}>
                     <Typography sx={{ fontSize: "17px", color: "#fff", fontStyle: "italic", width: "370px", display: "flex", justifyContent: "center" }}>{state1 ? state1 : "Язык"}</Typography>
                     {select1 ? <ArrowDropUpIcon sx={{ color: "#fff" }} /> : <ArrowDropDownIcon sx={{ color: "#fff" }} />}
@@ -90,7 +90,7 @@ const SelectBox = ({ setSelect1, setSelect2, select1, select2, cinemas, language
                         :
                         <Box onClick={() => setCalendar(true)} id={"input"}>
                             <Typography sx={{ color: "#fff", fontSize: "17px", fontWeight: 500, width: "370px", textAlign: "center" }}>Сегодня</Typography>
-                            <EventIcon onClick={() => setCalendar(true)} sx={{ color: "#fff", mr: 1.3, mt: 1 }} />
+                            <EventIcon id={"eye-icon"} onClick={() => setCalendar(true)} sx={{ color: "#fff", mr: 1.3, mt: 1 }} />
                         </Box>
                     }
                 </Box>
