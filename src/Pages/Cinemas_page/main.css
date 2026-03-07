@@ -3,6 +3,37 @@
     height: auto;
 }
 
+@media (max-width: 1425px) {
+    #cinemas-page-products-box {
+        padding: 105px 20px 75px 20px;
+    }
+}
+
+@media (max-width: 1390px) {
+    #cinemas-page-box {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
+    #cinemas-page-products-box {
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 1290px) {
+    #cinemas-page-box {
+        padding-bottom: 47px;
+        max-width: 520px;
+        padding-top: 16px;
+    }
+
+    #cinemas-page-products-box {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+        margin: 0 55px
+    }
+}
+
 @media (max-width: 1200px) {
     #cinemas-page-product-page-image-box {
         max-height: 530px;
@@ -10,6 +41,19 @@
 
     #cinemas-page-product-page-hover {
         max-height: 530px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #cinemas-page-products-box {
+        grid-template-columns: 1fr;
+        max-width: 730px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    #cinemas-page-box {
+        max-width: 700px;
     }
 }
 
@@ -48,6 +92,14 @@
     #cinemas-page-product-page-hover {
         max-height: 585px;
         padding: 0 30px;
+    }
+
+    #cinemas-page-products-box {
+        margin: 0;
+    }
+
+    #cinemas-page-box {
+        padding-bottom: 0;
     }
 }
 

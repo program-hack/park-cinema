@@ -10,10 +10,6 @@
     }
 }
 
-@media (max-width: auto) {
-
-}
-
 @media (max-width: 900px) {
     #header-inner {
         max-width: 850px;
@@ -28,6 +24,7 @@
     }
 
     #logo {
+        margin-top: 15px;
         margin: 0 auto;
     }
 }

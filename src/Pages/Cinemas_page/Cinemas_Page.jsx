@@ -7,7 +7,7 @@ import "./main.css";
 const Cinemas_Page = () => {
   return (
     <Box sx={{ backgroundColor: "#373737" }}>
-      <Box sx={{ maxWidth: "1400px", mx: "auto", pt: 14, pb: 9, display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center", alignItems: "start", gap: 2 }}>
+      <Box id={"cinemas-page-products-box"} sx={{ maxWidth: "1400px", mx: "auto", pt: 14, pb: 9, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", alignItems: "start", gap: 2 }}>
         {cinemasData.map((cinema, index) => (
           <Block key={index} cinema={cinema} />
         ))}
