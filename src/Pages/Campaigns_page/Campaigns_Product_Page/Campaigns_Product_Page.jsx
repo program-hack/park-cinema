@@ -8,8 +8,8 @@ const Campaigns_Product_Page = () => {
     const product = campaignsList.find(item => item.path === campaignId);
   return (
     <Box sx={{ backgroundColor: "#373737" }}>
-        <Box sx={{ maxWidth: "1400px", mx: "auto", pt: 15, pb: 44 }}>
-            <Typography sx={{ color: "#d9dadb", fontSize: "1.875rem" }}>{product.title}</Typography>
+        <Box id={"campaigns-page-product-page-box"} sx={{ maxWidth: "1400px", mx: "auto", pt: 15, pb: 44 }}>
+            <Typography id={"campaigns-page-product-page-title"} sx={{ color: "#d9dadb", fontSize: "1.875rem" }}>{product.title}</Typography>
             <Typography sx={{ color: "#d9dadb", mt: 2 }}>{product.description}</Typography>
         </Box>
     </Box>

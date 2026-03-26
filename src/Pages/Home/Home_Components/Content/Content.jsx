@@ -27,7 +27,10 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
                         id={"link"}
                         to={"/"}
                     >
-                        <Typography id={"text"}>
+                        <Typography
+                            sx={{ fontSize: "25px", color: "#fff", }}
+                            id={"text"}
+                        >
                             Список
                         </Typography>
                     </Link>
@@ -35,7 +38,10 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
                         id={"link"}
                         to={"/trailers"}
                     >
-                        <Typography id={"text"}>
+                        <Typography
+                            sx={{ fontSize: "25px", color: "#fff", }}
+                            id={"text"}
+                        >
                             Трейлеры
                         </Typography>
                     </Link>

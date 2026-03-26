@@ -6,13 +6,42 @@ import { FaTiktok } from "react-icons/fa";
 
 export const footerList = {
     left: [
-        "Кинотеатры", "Акции", "FAQ"
+        {
+            title: "Кинотеатры",
+            link: "/cinemas"
+        },
+        {
+            title: "Акции",
+            link: "/campaigns",
+        },
+        {
+            title: "FAQ",
+            link: "/faq",
+        }
     ],
     center: [
         "Профиль", "Контакты", "Правовые Условия",
     ],
     right: [
-        <AiFillInstagram />, <FaFacebook />, <FaYoutube />,
-        <FaTelegram />, <FaTiktok />
+        {
+            icon: <AiFillInstagram />,
+            link: "https://www.instagram.com/parkcinema/"
+        },
+        {
+            icon: <FaFacebook />,
+            link: "https://www.facebook.com/ParkCinema"
+        },
+        {
+            icon: <FaYoutube />,
+            link: "https://www.youtube.com/@ParkCinemaAzerbaijan"
+        },
+        {
+            icon: <FaTelegram />,
+            link: "https://t.me/parkcinemaofficial"
+        },
+        {
+            icon: <FaTiktok />,
+            link: "https://www.tiktok.com/@parkcinema.az?_t=ZS-8u4JT5RcwdE&_r=1"
+        },
     ]
 }

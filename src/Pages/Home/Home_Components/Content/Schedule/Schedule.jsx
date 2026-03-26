@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Box, Pagination, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 
@@ -90,13 +90,12 @@ const Schedule = ({ setSelect3, setSelect4, select3, select4, languages, cinemas
                     slidesPerView={3}
                     longSwipesRatio={true}
                     spaceBetween={20}
-                    width={'200px'}
                     loop={true}
                     navigation={true}
                     style={{
                         '--swiper-navigation-color': '#fff',
                         '--swiper-pagination-color': '#fff',
-                        '--swiper-navigation-size': '30px',
+                        '--swiper-navigation-size': '20px'
                     }}
                 >
                     {datesList.map((date, index) => (

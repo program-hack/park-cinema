@@ -1,0 +1,40 @@
+@media (max-width: 1420px) {
+    #campaigns-page-title {
+        margin-left: 50px;
+    }
+
+    #campaigns-page-product-box {
+        max-width: 510px;
+    }
+
+    #campaigns-page-product-image {
+        max-width: 510px;
+    }
+
+    #campaigns-page-product-page-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #campaigns-page-products {
+        padding: 0 25px;
+    }
+
+    #campaigns-page-product-box {
+        max-width: 700px;
+        max-height: 500px;
+    }
+
+    #campaigns-page-product-image {
+        max-width: 700px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    #campaigns-page-product-page-title {
+        font-size: 30px;
+    }
+}

@@ -42,7 +42,7 @@ const Products_Page = ({ setSelect3, setSelect4, select3, select4}) => {
                 <Typography sx={{ color: "rgba(217, 218, 219, 1)", fontSize: "15px" }}><b style={{ color: "#fff" }}>Дата выхода:</b> {product.release_date}</Typography>
               </Box>
             </Box>
-            <Typography id={"product-page-description"} sx={{ color: "#fff", fontSize: "16px", fontWeight: 500, maxWidth: "700px", mt: 5.6 }}>{product.description}</Typography>
+            <Typography id={"product-page-description"} sx={{ color: "#fff", fontSize: "16px", fontWeight: 400, maxWidth: "700px", mt: 5.6 }}>{product.description}</Typography>
           </Box>
 
           <Box id={"product-page-video"} sx={{ borderRadius: 6, overflow: "hidden", maxWidth: "660px", maxHeight: "380px", width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>

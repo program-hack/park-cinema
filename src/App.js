@@ -12,6 +12,7 @@ import FAQ_Page from './Pages/FAQ_Page/FAQ_Page';
 import Contacts_Page from './Pages/Contacts_Page/Contacts_Page';
 import Profile_Page from './Pages/Profile_page/Profile_Page';
 import { Box } from '@mui/material';
+import Trailers_Page from './Pages/Trailers_page/Trailers_Page';
 
 function App() {
   const [select3, setSelect3] = useState(false);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/faq" element={<FAQ_Page />} />
           <Route path="/contacts" element={<Contacts_Page />} />
           <Route path="/profile" element={<Profile_Page />} />
+          <Route path="/trailers" element={<Trailers_Page />} />
         </Routes>
         <Footer />
       </Router>

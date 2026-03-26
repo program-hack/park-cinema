@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Box, IconButton, List, ListItem, Typography } from '@mui/material'
-import { footerList } from './data';
 import { Link, useNavigate } from 'react-router-dom';
+import { footerList } from './data';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ const Footer = () => {
         <img style={{ width: "170px", height: "auto" }} src="https://new.parkcinema.az/images/logo.svg" alt="Logo" />
         <List sx={{ display: "flex", flexDirection: "column" }}>
           {footerList.left.map((item, index) => (
-            <ListItem key={index} sx={{ color: "#d9dadb", fontSize: "16px", fontWeight: 500, cursor: "pointer", transition: "all 0.3s ease", "&:hover": { color: "#fff" } }}>{item}</ListItem>
+            <ListItem key={index} onClick={() => navigate(item.link)} sx={{ color: "#d9dadb", fontSize: "16px", fontWeight: 500, cursor: "pointer", transition: "all 0.3s ease", "&:hover": { color: "#fff" } }}>{item.title}</ListItem>
           ))}
         </List>
         <List sx={{ display: "flex", flexDirection: "column" }}>
@@ -23,9 +23,9 @@ const Footer = () => {
         <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
           <Typography sx={{ fontSize: "17px", color: "#fff" }}>Следите за нами</Typography>
           <Box sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: 2, mt: 1.2 }}>
-            {footerList.right.map((icon, index) => (
-              <IconButton onClick={() => navigate("")} sx={{ backgroundColor: "#fff", fontSize: "25px", color: "rgba(213, 43, 30, 1)", "&:hover": { color: "#fff" } }} key={index}>
-                {icon}
+            {footerList.right.map((item, index) => (
+              <IconButton onClick={() => navigate(item.link)} key={index} sx={{ backgroundColor: "#fff", fontSize: "25px", color: "rgba(213, 43, 30, 1)", "&:hover": { color: "#fff" } }}>
+                {item.icon}
               </IconButton>
             ))}
           </Box>
