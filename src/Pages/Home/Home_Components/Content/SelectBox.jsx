@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
-import { Box, Fade, List, ListItem, Typography } from '@mui/material';
+import { Box, Fade, Typography } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import Popup from './Popup';
 
 
 /* Icons */
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import EventIcon from '@mui/icons-material/Event';
-import Popup from './Popup';
 
 
 const SelectBox = ({ setSelect1, setSelect2, select1, select2, cinemas, languages }) => {

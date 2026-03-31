@@ -17,7 +17,7 @@ const Footer = () => {
         </List>
         <List sx={{ display: "flex", flexDirection: "column" }}>
           {footerList.center.map((item, index) => (
-            <ListItem key={index} sx={{ color: "#d9dadb", fontSize: "16px", fontWeight: 500, cursor: "pointer", transition: "all 0.3s ease", "&:hover": { color: "#fff" } }}>{item}</ListItem>
+            <ListItem key={index} onClick={() => navigate(item.link)} sx={{ color: "#d9dadb", fontSize: "16px", fontWeight: 500, cursor: "pointer", transition: "all 0.3s ease", "&:hover": { color: "#fff" } }}>{item.title}</ListItem>
           ))}
         </List>
         <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
@@ -34,7 +34,7 @@ const Footer = () => {
       </Box>
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <Typography sx={{ color: "#d9dadb", fontSize: "15px", fontWeight: 500 }}>© Park Cinema, 2026</Typography>
-        <Link to={"https://www.esam-innovations.com/"} onMouseEnter={() => setLinkHover(true)} onMouseLeave={() => setLinkHover(false)} style={{ transition: "all 0.3s ease", color: linkHover ? "#fff" : "#d9dadb", textDecoration: "none" }}>ESAM Innovations</Link>
+        <Link to={"https://www.esam-innovations.com/"} target={"_blank"} onMouseEnter={() => setLinkHover(true)} onMouseLeave={() => setLinkHover(false)} style={{ transition: "all 0.3s ease", color: linkHover ? "#fff" : "#d9dadb", textDecoration: "none" }}>ESAM Innovations</Link>
       </Box>
     </Box>
   )

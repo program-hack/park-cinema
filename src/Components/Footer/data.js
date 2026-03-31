@@ -20,7 +20,18 @@ export const footerList = {
         }
     ],
     center: [
-        "Профиль", "Контакты", "Правовые Условия",
+        {
+            title: "Профиль",
+            link: "/profile"
+        },
+        {
+            title: "Контакты",
+            link: "/contacts"
+        },
+        {
+            title: "Правовые Условия",
+            link: "/terms-conditions"
+        },
     ],
     right: [
         {
