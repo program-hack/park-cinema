@@ -15,6 +15,7 @@ import { Box } from '@mui/material';
 import Trailers_Page from './Pages/Trailers_page/Trailers_Page';
 import Terms_Conditions_page from './Pages/Terms_Conditions_page/Terms_Conditions_page';
 import Picture from "./Wedges@1x-3.0s-200px-200px.svg";
+import LinearDeterminate from './LinearDeterminate';
 
 function App() {
   const [select3, setSelect3] = useState(false);
@@ -47,14 +48,17 @@ function App() {
           </Router>
         </Box>
       )
-    }, 3000)
+    }, 2500)
   }, [])
   return (
     <>
       {showImage ? (
-        <Box sx={{ bgcolor: "#000", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-          <img src={Picture} alt="Loading..." />
-        </Box>
+        <>
+          <LinearDeterminate />
+          <Box sx={{ bgcolor: "#000", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+            <img src={Picture} alt="Loading..." />
+          </Box>
+        </>
       ) : (
         <>
           {loading}
