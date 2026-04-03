@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Box } from '@mui/material';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
@@ -11,7 +12,6 @@ import Campaigns_Product_Page from './Pages/Campaigns_page/Campaigns_Product_Pag
 import FAQ_Page from './Pages/FAQ_Page/FAQ_Page';
 import Contacts_Page from './Pages/Contacts_Page/Contacts_Page';
 import Profile_Page from './Pages/Profile_page/Profile_Page';
-import { Box } from '@mui/material';
 import Trailers_Page from './Pages/Trailers_page/Trailers_Page';
 import Terms_Conditions_page from './Pages/Terms_Conditions_page/Terms_Conditions_page';
 import Picture from "./Wedges@1x-3.0s-200px-200px.svg";
