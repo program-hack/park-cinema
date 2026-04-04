@@ -35,7 +35,7 @@ const HiddenMenu = ({ hiddenMenuOpen, setHiddenMenuOpen }) => {
           in={hiddenMenuOpen}
           direction="up"
         >
-          <Box onClick={(e) => e.stopPropagation()} sx={{ width: "100%", maxHeight: "500px", mt: 16.7, height: hiddenMenuOpen ? "100%" : "0%", py: 1, backgroundColor: "#313131da", borderTopLeftRadius: 20, borderTopRightRadius: 20, overflow: "hidden" }}>
+          <Box onClick={(e) => e.stopPropagation()} sx={{ width: "100%", position: "relative", top: 135, bottom: 0, left: 0, right: 0, maxHeight: "500px", height: hiddenMenuOpen ? "100%" : "0%", py: 1, backgroundColor: "#313131da", borderTopLeftRadius: 20, borderTopRightRadius: 20, overflow: "hidden" }}>
 
             <Box sx={{ borderRadius: 50, width: "70px", height: "4px", mx: "auto", bgcolor: "#6b6b6b" }}></Box>
 
