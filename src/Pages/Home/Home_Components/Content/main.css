@@ -269,9 +269,23 @@
 }
 
 @media (max-width: 400px) {
-    #content-menu {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
+    #text {
+        font-size: 24px;
+    }
+
+    #content-buttons-list {
+        margin-left: 5px;
+    }
+
+    #select {
+        width: 340px;
+        margin-right: 20px;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+
+    #input {
+        min-width: 340px;
+        margin-right: 20px;
     }
 }

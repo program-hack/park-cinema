@@ -1,14 +1,15 @@
 import React from 'react'
 import { Box, Button, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import "../main.css";
 
 /* Icons */
 import EastIcon from '@mui/icons-material/East';
-import { useNavigate } from 'react-router-dom';
 
 const Block = ({ item }) => {
     const navigate = useNavigate();
     return (
-        <Box sx={{ minWidth: "920px", height: "auto", borderRadius: 5, backgroundColor: "#373737", overflow: "hidden" }}>
+        <Box id={"video-box"} sx={{ minWidth: "920px", height: "auto", borderRadius: 5, backgroundColor: "#373737", overflow: "hidden" }}>
             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 {item.video}
             </Box>
