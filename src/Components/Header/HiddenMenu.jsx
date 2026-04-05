@@ -7,6 +7,7 @@ import Paper from '@mui/material/Paper';
 /* Icons */
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useNavigate } from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#D9DADB",
@@ -20,6 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const HiddenMenu = ({ hiddenMenuOpen, setHiddenMenuOpen }) => {
+  const navigate = useNavigate();
   const [languageOpen, setLanguageOpen] = useState(false);
   const [languageState, setLanguageState] = useState('');
   return (
@@ -35,7 +37,7 @@ const HiddenMenu = ({ hiddenMenuOpen, setHiddenMenuOpen }) => {
           in={hiddenMenuOpen}
           direction="up"
         >
-          <Box onClick={(e) => e.stopPropagation()} sx={{ width: "100%", position: "relative", top: 135, bottom: 0, left: 0, right: 0, maxHeight: "500px", height: hiddenMenuOpen ? "100%" : "0%", py: 1, backgroundColor: "#313131da", borderTopLeftRadius: 20, borderTopRightRadius: 20, overflow: "hidden" }}>
+          <Box id={"hidden-menu-content"} onClick={(e) => e.stopPropagation()} sx={{ width: "100%", position: "relative", top: 135, bottom: 0, left: 0, right: 0, maxHeight: "500px", height: hiddenMenuOpen ? "100%" : "0%", py: 1, backgroundColor: "#313131da", borderTopLeftRadius: 20, borderTopRightRadius: 20, overflow: "hidden" }}>
 
             <Box sx={{ borderRadius: 50, width: "70px", height: "4px", mx: "auto", bgcolor: "#6b6b6b" }}></Box>
 
@@ -43,7 +45,7 @@ const HiddenMenu = ({ hiddenMenuOpen, setHiddenMenuOpen }) => {
               <Grid container spacing={1.4}>
                 {hiddenMenuList.map((item, index) => (
                   <Grid key={index} size={item.size}>
-                    <Item sx={{ display: "flex", justifyContent: item.justify, alignItems: "center", gap: 1.2, height: "60px", borderRadius: 2 }}>
+                    <Item onClick={() => navigate(item.link)} sx={{ display: "flex", justifyContent: item.justify, alignItems: "center", gap: 1.2, height: "60px", borderRadius: 2, overflow: "hidden" }}>
                       <img style={{ width: item.width, height: "auto" }} src={item.icon} alt="Icon" />
                       <Typography sx={{ fontSize: "16px", color: "#202735" }}>{item.title}</Typography>
                     </Item>

@@ -24,7 +24,7 @@ const Register_Box = () => {
     }, [cleared]);
     return (
         <>
-            <Typography sx={{ color: "#d9dadb", fontSize: "1.875rem" }}>Регистрация</Typography>
+            <Typography sx={{ color: "#d9dadb", fontSize: "1.875rem", pl: 2 }}>Регистрация</Typography>
             <Box sx={{ display: "flex", justifyContent: "center", gap: 10, alignItems: "start", mt: 3 }}>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
                     <Box sx={{ borderBottom: "1px solid #d9dadb", minWidth: "500px", width: "100%", height: "50px", pl: 1 }}>

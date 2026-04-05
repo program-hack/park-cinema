@@ -46,6 +46,7 @@ export const hiddenMenuList = [
         width: "50px",
         size: 6,
         justify: "",
+        link: "/profile"
     },
     {
         title: "Мои Билеты",
@@ -53,6 +54,7 @@ export const hiddenMenuList = [
         width: "50px",
         size: 6,
         justify: "",
+        link: "/profile"
     },
     {
         title: "Кинотеатры",
@@ -60,6 +62,7 @@ export const hiddenMenuList = [
         width: "50px",
         size: 12,
         justify: "center",
+        link: "/cinemas"
     },
     {
         title: "Акции",
@@ -67,6 +70,7 @@ export const hiddenMenuList = [
         width: "50px",
         size: 12,
         justify: "center",
+        link: "/campaigns"
     },
     {
         title: "Контакты",
@@ -74,6 +78,7 @@ export const hiddenMenuList = [
         width: "50px",
         size: 6,
         justify: "",
+        link: "/contacts"
     },
     {
         title: "FAQ",
@@ -81,6 +86,7 @@ export const hiddenMenuList = [
         width: "50px",
         size: 6,
         justify: "",
+        link: "/faq"
     },
     {
         title: "Правовые Условия",
@@ -88,11 +94,13 @@ export const hiddenMenuList = [
         width: "50px",
         size: 6,
         justify: "",
+        link: "/terms-conditions"
     },
     {
         icon: "https://new.parkcinema.az/images/google-play.svg",
-        width: "100%",
+        width: "99%",
         size: 6,
         justify: "",
+        link: "https://play.google.com/store/apps/details?id=az.parkcinema.app&hl=az"
     },
 ]

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 /* Icons */
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import { Link } from 'react-router-dom';
 
 const Login_Box = ({ setRegisterBtn }) => {
     return (
         <>
-            <Typography sx={{ color: "#d9dadb", fontSize: "1.875rem" }}>Войти</Typography>
+            <Typography sx={{ color: "#d9dadb", fontSize: "1.875rem", pl: 2 }}>Войти</Typography>
             <Box sx={{ maxWidth: "600px", mx: "auto", mt: 3 }}>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
                     <Box sx={{ borderBottom: "1px solid #d9dadb", maxWidth: "600px", width: "100%", height: "50px", pl: 1 }}>

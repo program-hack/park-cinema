@@ -9,16 +9,16 @@ import EastIcon from '@mui/icons-material/East';
 const Block = ({ item }) => {
     const navigate = useNavigate();
     return (
-        <Box id={"video-box"} sx={{ minWidth: "920px", height: "auto", borderRadius: 5, backgroundColor: "#373737", overflow: "hidden" }}>
-            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Box id={"trailer-box"} sx={{ minWidth: "920px", height: "auto", borderRadius: 5, backgroundColor: "#373737", overflow: "hidden" }}>
+            <Box id={"video-box"} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 {item.video}
             </Box>
             <Box sx={{ px: 2, pt: 1, pb: 2 }}>
-                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "start" }}>
+                <Box id={"trailer-info"} sx={{ display: "flex", justifyContent: "space-between", alignItems: "start" }}>
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                         <Typography sx={{ fontSize: "15px", color: "#fff" }}>{item.title}</Typography>
                         <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", columnGap: 1.5 }}>
-                            <Typography sx={{ color: "#fff", fontSize: "15px", }}>{item.theme}</Typography>
+                            <Typography id={"trailer-theme"} sx={{ color: "#fff", fontSize: "15px" }}>{item.theme}</Typography>
                             {item.languages.map((language, index) => (
                                 <Box key={index} sx={{ width: "20px", height: "20px", borderRadius: 50, overflow: "hidden", objectFit: "cover", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                     <img style={{ width: "100%", height: "100%" }} src={language} alt="" />
