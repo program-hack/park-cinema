@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Box, Typography } from '@mui/material'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import Schedule_Content from './Schedule_Content';
+import Schedule_Popup from './Schedule_Popup';
+import "../main.css";
 
 import 'swiper/css';
 
@@ -11,8 +14,6 @@ import 'swiper/css/effect-fade';
 /* Icons */
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import Schedule_Popup from './Schedule_Popup';
-import Schedule_Content from './Schedule_Content';
 
 
 const Schedule = ({ setSelect3, setSelect4, select3, select4, languages, cinemas }) => {
@@ -84,8 +85,9 @@ const Schedule = ({ setSelect3, setSelect4, select3, select4, languages, cinemas
 
     return (
         <Box sx={{ mt: 7 }}>
-            <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 5 }}>
+            <Box id={"schedule-box"} sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 5 }}>
                 <Swiper
+                    id={"schedule-swiper"}
                     modules={[Navigation]}
                     slidesPerView={3}
                     longSwipesRatio={true}
@@ -106,7 +108,7 @@ const Schedule = ({ setSelect3, setSelect4, select3, select4, languages, cinemas
                     ))}
                 </Swiper>
 
-                <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }}>
+                <Box id={"schedule-filters"} sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }}>
                     <Box onClick={() => setSelect4(!select4)} id={"select"}>
                         <Typography sx={{ fontSize: "17px", color: "#fff", fontStyle: "italic", width: "370px", display: "flex", justifyContent: "center", alignItems: "center", userSelect: "none" }}>{state2 ? state2 : "Кинотеатры"}</Typography>
                         {select4 ? <ArrowDropUpIcon sx={{ color: "#fff" }} /> : <ArrowDropDownIcon sx={{ color: "#fff" }} />}

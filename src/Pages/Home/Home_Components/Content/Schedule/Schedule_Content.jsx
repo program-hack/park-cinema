@@ -6,7 +6,7 @@ const Schedule_Content = () => {
     return (
         <Box sx={{ display: "flex", flexDirection: "column", mt: 2 }}>
             {moviesList.map(movie => (
-                <Box key={movie.id} sx={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid #fff", py: 1.8 }}>
+                <Box id={"schedule-item"} key={movie.id} sx={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid #fff", py: 1.8 }}>
                     <Typography sx={{ color: "#fff", fontSize: "14px", textAlign: "center" }}>{movie.time}</Typography>
                     <Box sx={{ maxWidth: "200px", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <Typography sx={{ color: "#fff", fontSize: "14px", textAlign: "center" }}>{movie.movie_name}</Typography>

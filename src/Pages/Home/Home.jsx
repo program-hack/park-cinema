@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import Carousel from './Home_Components/Carousel/Carousel';
+import HiddenMenu from '../../Components/Header/HiddenMenu';
 import Content from './Home_Components/Content/Content';
 
 /* Icons */
 import MenuIcon from '@mui/icons-material/Menu';
-import HiddenMenu from '../../Components/Header/HiddenMenu';
 
 const Home = () => {
   const [hiddenMenuOpen, setHiddenMenuOpen] = useState(false);

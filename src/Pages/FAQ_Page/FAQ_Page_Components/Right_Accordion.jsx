@@ -9,6 +9,7 @@ export default function Right_Accordion() {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
       <Accordion
+        id={"accordion"}
         sx={{
           backgroundColor: "transparent",
           color: "#fff",
@@ -39,6 +40,7 @@ export default function Right_Accordion() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        id={"accordion"}
         sx={{
           backgroundColor: "transparent",
           color: "#fff",

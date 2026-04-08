@@ -1,0 +1,38 @@
+#faq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 30px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1300px) {
+    #faq-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8rem;
+    }
+    
+    #faq-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #faq-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 660px) {
+    #accordion {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    #accordion {
+        width: 350px;
+    }
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Box, Typography } from '@mui/material';
 import Picture from "../../Wedges@1x-3.0s-200px-200px.svg";
 import LinearDeterminate from '../../LinearDeterminate';
+import "./main.css";
 
 const Terms_Conditions_page = () => {
   const [loading, setLoading] = useState("");
@@ -12,7 +13,7 @@ const Terms_Conditions_page = () => {
       setShowImage(false);
       setLoading(
         <Box sx={{ backgroundColor: "#373737" }}>
-          <Box sx={{ pt: 18, pb: 14, maxWidth: "1400px", mx: "auto" }}>
+          <Box id={"terms-conditions-content"} sx={{ pt: 18, pb: 14, maxWidth: "1400px", mx: "auto" }}>
             <Typography sx={{ color: "#D9DADB", fontSize: "1.875rem" }}>Правила и условия</Typography>
             <Box sx={{ mt: 4, display: "flex", flexDirection: "column", rowGap: 2 }}>
               <Typography sx={{ color: "#D9DADB" }}>Приветствуем вас на веб-сайте интернет-ресурса «Parkcinema.az»!</Typography>

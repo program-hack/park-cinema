@@ -22,3 +22,13 @@
         gap: 10px;
     }
 }
+
+@media (max-width: 500px) {
+    #trailer-box {
+        min-width: 320px;
+    }
+
+    #video-box {
+        max-width: 320px;
+    }
+}

@@ -8,6 +8,7 @@ export default function Left_Accordion() {
   return (
     <div>
       <Accordion
+        id={"accordion"}
         sx={{
           backgroundColor: "transparent",
           color: "#fff",
@@ -38,6 +39,7 @@ export default function Left_Accordion() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        id={"accordion"}
         sx={{
           backgroundColor: "transparent",
           color: "#fff",
@@ -68,6 +70,7 @@ export default function Left_Accordion() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        id={"accordion"}
         sx={{
           backgroundColor: "transparent",
           color: "#fff",
