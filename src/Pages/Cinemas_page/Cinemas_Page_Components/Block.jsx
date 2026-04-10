@@ -13,7 +13,7 @@ const Block = ({ cinema }) => {
         <img style={{ width: "100%", height: "auto" }} src={cinema.image} alt="Picture" />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "start", gap: 1.4, pb: cinema.pb }}>
-        <Typography sx={{ fontSize: "1.125rem", color: "#d9dadb", mt: 2.5 }}>{cinema.title}</Typography>
+        <Typography sx={{ fontSize: "1.125rem", color: "#d9dadb", mt: 0.6 }}>{cinema.title}</Typography>
         <Typography sx={{ color: "#d9dadb", display: "flex", alignItems: "center", gap: 1 }}><WatchLaterIcon /> {cinema.work_times}</Typography>
         <Typography sx={{ color: "#d9dadb", display: "flex", alignItems: "center", gap: 1 }}><LocationPinIcon /> {cinema.location}</Typography>
         <Typography sx={{ color: "#d9dadb", display: "flex", alignItems: "center", gap: 1 }}><PhoneIcon /> {cinema.phone}</Typography>

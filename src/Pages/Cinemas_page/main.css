@@ -50,6 +50,7 @@
         max-width: 730px;
         margin: 0 auto;
         margin-top: 10px;
+        gap: 3.5rem;
     }
 
     #cinemas-page-box {

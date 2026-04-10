@@ -1,3 +1,6 @@
 {
-  "files.defaultLanguage": "Russian"
+  "files.defaultLanguage": "Russian",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.cursorWidth": 0
 }
