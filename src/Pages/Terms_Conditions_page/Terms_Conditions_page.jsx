@@ -142,7 +142,7 @@ const Terms_Conditions_page = () => {
       {showImage ? (
         <>
           <LinearDeterminate />
-          <Box sx={{ bgcolor: "#000", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+          <Box sx={{ bgcolor: "#000", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", userSelect: "none" }}>
             <img src={Picture} alt="Loading..." />
           </Box>
         </>

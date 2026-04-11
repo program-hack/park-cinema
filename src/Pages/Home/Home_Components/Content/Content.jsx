@@ -28,7 +28,7 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
                         to={"/"}
                     >
                         <Typography
-                            sx={{ fontSize: "25px", color: "#fff", }}
+                            sx={{ fontSize: "25px", color: "#fff", userSelect: "none" }}
                             id={"text"}
                         >
                             Список
@@ -39,7 +39,7 @@ const Content = ({ setSelect3, setSelect4, select3, select4, languages, cinemas 
                         to={"/trailers"}
                     >
                         <Typography
-                            sx={{ fontSize: "25px", color: "#fff", }}
+                            sx={{ fontSize: "25px", color: "#fff", userSelect: "none" }}
                             id={"text"}
                         >
                             Трейлеры
